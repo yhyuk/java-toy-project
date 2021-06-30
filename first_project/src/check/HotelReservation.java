@@ -221,7 +221,7 @@ public class HotelReservation extends Thread{
 				while(rs.next()) {
 					hotelList.add(rs.getString("hotelname"));
 				}
-
+				
 				for(int i=0;i<hotelList.size();i++) {
 					if(i<hotelList.size()-1) {
 						if(answerHotelName.equals(hotelList.get(i))) {
@@ -310,7 +310,7 @@ public class HotelReservation extends Thread{
 					}
 				}
 			}while(flag);
-			
+			d
 			sql="select price from hotelroom where hotelcode=? and roomname=?";
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setString(1, hotelCode);

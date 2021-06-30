@@ -155,13 +155,8 @@ public class HotelReservationDisplay {
 	 * @param roomNmae
 	 * */
 	public void selectRoomDisplay(String roomName) {
-		
 		blank();
 		introDisplay();
-		
-		
-		
-		
 	}
 	
 	/** 콘솔화면 아래로 내리기 */
@@ -210,6 +205,7 @@ public class HotelReservationDisplay {
 				String[] data = temp.split(",");
 				hotelRoomList.add(new HotelRoom(data[0], data[1], Integer.parseInt(data[2])));
 			}
+			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
